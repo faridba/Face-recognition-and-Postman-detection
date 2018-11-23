@@ -1,0 +1,15 @@
+<launch>
+  <node 
+	pkg="postman_detector" 
+	name="Postman_detector_python_node" 
+	type="postman_detection.py" 
+	args = "--prototxt /home/ferid/catkin_ws/src/detect/postman_detector/src/MobileNetSSD_deploy.prototxt.txt --model /home/ferid/catkin_ws/src/detect/postman_detector/src/MobileNetSSD_deploy.caffemodel"
+	output="screen">
+  </node>
+  <node 
+	pkg="my_face_recogniser" 
+	name="face_recognising_python_node" 
+	type="recognise_face.py" 
+	output="screen">
+  </node>
+</launch>
