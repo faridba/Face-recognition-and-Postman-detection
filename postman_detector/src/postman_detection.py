@@ -1,9 +1,4 @@
 #!/usr/bin/env python
-# terminal command to run file:
-# python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
-
-# import the necessary packages
-
 import numpy as np
 import argparse
 import imutils
